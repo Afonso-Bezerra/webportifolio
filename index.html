@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Site Portifolio">
+    <meta name="description" content="Portfólio Online">
     <meta name="author" content="Afonso Bezerra">
     <title>Afonso Bezerra</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="./css/aos.min.css" rel="stylesheet">
+    <link href="./css/swiper.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="./assets/images/favicon.png">
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
+<body>
     
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
         <div class="container">
-             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+
+          
+            <a class="navbar-brand logo-text" href="index.html">Web Design</a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" >
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">Início<span class="sr-only">(current)</span></a>
+                        <a class="nav-link active" aria-current="page" href="#header">ínicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">Sobre</a>
+                        <a class="nav-link" href="#about">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#services">Projetos</a>
+                        <a class="nav-link" href="#services">Projetos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contato</a>
+                        <a class="nav-link" href="#work">Trabalho</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
                     </li>
                 </ul>
                 <span class="nav-item social-icons">
@@ -54,206 +61,203 @@
                     </span>
                 </span>
             </div> 
-        </div> 
+        </div>
     </nav> 
     
 
 
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h1 class="h1-large">Afonso Bezerra</h1>
-                        <p class="sub-title">Front-end Developer</p>
-                        <a class="btn-solid-lg page-scroll" href="#about">Sobre mim</a>
-                        <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contato</a>
-                    </div> 
-                </div> 
-            </div> <!-- end of row -->
+    <!-- Home -->
+    <section class="home py-5 d-flex align-items-center" id="header">
+        <div class="container text-light py-5"  data-aos="fade-right"> 
+            <h1 class="headline">Afonso<span class="home_text"> Bezerra</span></h1>
+            <p class="para para-light py-3">Desenvolvedor de aplicações Front-end.</p>
+            <div class="d-flex align-items-center">
+                <p class="p-2"><i class="fas fa-code fa-lg"></i></p>
+                <p>Código estruturado e funcional.</p>  
+            </div>
+            <div class="d-flex align-items-center">
+                <p class="p-2"><i class="fas fa-grin-stars fa-lg"></i></p>
+                <p>Design agradável para todos.</p>  
+            </div>
+            <div class="my-3">
+                <a class="btn" href="#about">Sobre Mim</a>
+            </div>
         </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+    </section> <!-- end of home -->
 
 
-    <!-- About-->
-    <div id="about" class="basic-1 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container first">
-                        <h2>Olá bem vindo,</h2>
-                        <p>me chamo Afonso e adoro aprender mais sobre designer de páginas e programação Front-end, criando landing pages mais bonitas e funcionais. </p>
-                    </div> 
-                </div> 
-                <div class="col-lg-4">
-                    <div class="text-container second">
-                        <div class="time">2021 - PRESENT</div>
-                        <h6>CRB - Construtora</h6>
-                        <p>Atualmente Trabalho como Front-end.</p>
-                        <div class="time">2020</div>
-                        <h6>Assistente de Programação</h6>
-                        <p>Trabalhei como Assistente full stack.</p>
-                    </div> 
-                </div> 
-                <div class="col-lg-4">
-                    <div class="text-container third">
-                        <div class="time">2020</div>
-                        <h6>Faculdade de Engenharia da Computação</h6>
-                        <p>Começei minha Faculdade</p>
-                        <div class="time">2017</div>
-                        <h6>Técnico de Programação</h6>
-                        <p>Estudei Programação voltada para a Web e me formei com excelência.</p>
-                    </div> 
-                </div> 
+    <!-- Information -->
+    <section class="information">
+        <div class="container-fluid">  
+            <div class="row text-light">
+                <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
+                    <i class="fas fa-id-card-alt fa-3x p-2"></i>
+                    <h4 class="py-3">Sobre Mim</h4>
+                    <p class="para-light">Me chamo Afonso e meu objetivo é adquirir mais conhecimentos sobre designer de páginas e programação Front-end, criando landing pages mais bonitas e funcionais. </p>
+                </div>
+                <div class="col-lg-4 text-center p-5"  data-aos="zoom-in">
+                    <i class="fas fa-code fa-3x p-2"></i>
+                    <h4 class="py-3">Experiência profissional </h4>
+                    <p class="para-light"><i class="time">2021</i></p>
+                    <h6>CRB Construtora</h6>
+                    <p class="para-light">Atualmente Trabalho com desenvolvimento Front-end.</p>
+                </div>
+                <div class="col-lg-4 text-center p-5 text-dark"  data-aos="zoom-in"> 
+                    <i class="fas fa-book fa-3x p-2"></i>
+                    <h4 class="py-3">Estudo</h4>
+                    <p class="para-light"><i class="time">Engenharia da Computação</i></p>
+                    <p class="para-light">Curso iniciado em 2020 com previsão de termino em 2025.</p>
+                </div>
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of information -->
+    
+
+    <!-- About -->
+    <section class="about d-flex align-items-center text-light py-5" id="about">
+        <div class="container" >
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <p>Sobre Mim</p>
+                    <h1>Quem sou <span class="home_text">eu?</span></h1>
+                    <p class="py-2 para-light">Me chamo Afonso Bezerra, 22 anos de idade, formado em Técnico em programação focada para Web a qual me formei em 2017. E desde então venho buscando avanços como profissional, deixando meus códigos e projetos bem estruturados e funcionais.</p>
+                    <p class="py-2 para-light">E buscando sempre a atualização profissional, trabalhando com frameworks mais potentes do mercado trazendo e buscando solução, qualidade e satisfação dos clientes. </p>
+
+                    <div class="my-3">
+                        <a class="btn" href="#work">Saber mais</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down"> 
+                    <img class="img-fluid" src="./assets/images/about.png" alt="about" >
+                </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of about -->
+    </section> <!-- end of about -->
 
 
     <!-- Services -->
-    <div id="services" class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Áreas Trabalhadas</h2>
-                    <p class="p-heading">Web Designer e Desenvolvimento tem sido minha paixão, a qual tenho sempre estudado buscando melhorias para os meus projetos me aprimorando nas áreas:</p>
-                </div> 
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="far fa-gem"></i>
-                        <h4>DESIGN</h4>
-                        <p>Projetos de sucesso começam com um bom design. Buscando agradar o cliente e trazer mais acessos.</p>
-                    </div> <!-- end of text-box -->
-                </div> 
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="fas fa-code"></i>
-                        <h4>DEVELOPMENT</h4>
-                        <p>Meu foco é gerar um código limpo e bem estruturado para confiabilidade, com segurança e sofisticação.</p>
-                    </div> <!-- end of text-box -->
-                </div> 
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="fas fa-tv"></i>
-                        <h4>BASIC SEO</h4>
-                        <p>Posso configurar seu projeto para usar os princípios básicos de SEO, trazendo economia e resultados.</p>
-                    </div> <!-- end of text-box -->
-                </div> 
+    <section class="services d-flex py-5" id="services">
+        <div class="container text-light">
+            <div class="text-center pb-4" >
+                <h2 class="py-2">Projetos</h2>
+                <p class="para-light">Projetos pessoais realizados para estudos e treinamentos.</p>
             </div>
-        </div> 
-    </div> 
-
-
-    <!-- Details -->
-	<div class="split">
-		<div class="area-1">
-		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2 bg-gray">
-            <div class="container">    
-                <div class="row">
-                    <div class="col-lg-12">     
-                        
-                       
-                        <div class="text-container">
-                            <h2>Trabalhar comigo</h2>
-                            <p>Sou um ótimo comunicador e adoro investir o tempo necessário para entender muito bem o problema do cliente.</p>
-                            <h5>DESIGN TOOLS</h5>
-                            <p>Minhas ferramentas de design favoritas são Photoshop e Figma.</p>
-                            <h5>DEVELOPMENT SKILLS</h5>
-                            <p> Estou familiarizado e trabalho diariamente com HTML, CSS, JavaScript, Bootstrap e outros frameworks modernos.</p>
-                            
-                            <div class="icons-container">
-                                <img src="images/details-icon-photoshop.png" alt="alternative">
-                                <img src="images/details-icon-html.png" alt="alternative">
-                                <img src="images/details-icon-css.png" alt="alternative">
-                                <img src="images/details-icon-bootstrap.png" alt="alternative">
-                                <img src="images/details-icon-javascript.png" alt="alternative">
-                                <img src="images/react.png" alt="alternative">
-                                <img src="images/php.png" alt="alternative">
-                            </div> 
-                        </div> 
-                      
-
-                    </div> 
-                </div> 
-            </div> 
-		</div> 
-    </div> 
-  
-
-
-     <div id="projects" class="basic-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Projetos Realizados</h2>
-                    <p class="p-heading">Projetos pessoais realizados para estudos e treinamento</p>
-                </div> 
-            </div> 
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row gy-4 py-2 " data-aos="zoom-in">
+                <div class="text-center">
                     <div class="text-container">
                         <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/prj1.PNG" alt="alternative">
+                            <a>
+                                <img src="assets/images/prj1.PNG" alt="alternative">
                             </a>
                         </div> 
                         <p class="sub-title"><strong>Por:</strong> Afonso Bezerra, <strong>Projeto:</strong> web designer para portfólio pessoal profissional.</p>
                     </div> 
-            </div>
-        </div> 
-    </div> 
-    
-    
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of services -->
+
+
+
+    <!-- Work -->
+    <section class="work d-flex align-items-center py-5" >
+        <div class="container-fluid text-light">
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" id="work">
+                    <img class="img-fluid" src="./assets/images/work.jpeg" alt="work">        
+                </div>
+                <div class="col-lg-5 d-flex align-items-center px-4 py-3" data-aos="">
+                    <div class="row" data-aos="fade-up">
+                        <div class="text-center text-lg-start py-4 pt-lg-0">
+                            <div class="text-container">
+                            
+                                <br>
+                                <p>Meu Trabalho</p>
+                                <br>
+                                <h5>Trabalhar comigo</h5>
+                                <p class="sub-title">Sou um ótimo comunicador, busco um ambiente de trabalho agradável, facilitador e adoro investir o tempo necessário para entender e esclarecer as dúvidas dos clientes.</p>
+                               <br>
+                                <h5>DESIGN TOOLS</h5>
+                                <p class="sub-title">Minhas ferramentas de design favoritas são Photoshop e Figma.</p>
+                                <br>
+                                <h5>DEVELOPMENT SKILLS</h5>
+                                <p class="sub-title"> Estou familiarizado e trabalho diariamente com HTML, CSS, JavaScript, Bootstrap e outros frameworks modernos.</p>
+                                <br>
+                                <div class="icons-container">
+                                    <img src="assets/images/details-icon-photoshop.png" alt="alternative">
+                                    <img src="assets/images/details-icon-html.png" alt="alternative">
+                                    <img src="assets/images/details-icon-css.png" alt="alternative">
+                                    <img src="assets/images/details-icon-bootstrap.png" alt="alternative">
+                                    <img src="assets/images/details-icon-javascript.png" alt="alternative">
+                                    <img src="assets/images/react.png" alt="alternative">
+                                    <img src="assets/images/php.png" alt="alternative">
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="container" data-aos="fade-up">
+                            <div class="row g-5">
+                               
+                            </div>
+                        </div> <!-- end of container -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of col-lg-5 -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of work -->
+
 
     <!-- Contact -->
-    <div id="contact" class="form-1 bg-gray">
-        <div class="container">
+    <section class="contact align-items-center py-5" id="contact">
+        <div class="container-fluid text-light">
             <div class="row">
-                <div class="col-lg-12">
-                    <h2>Enviar Contato</h2>
-                    <p class="p-heading">Para qualquer tipo de projeto online, por favor, não hesite em entrar em contato comigo. A maneira mais rápida é me enviar sua mensagem usando o seguinte e-mail <a class="blue no-line" href=" mailto:afonsobezerra199@gmail.com">contact@domain.com</a></p>
-                </div> 
-            </div> 
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center px-lg-5" data-aos="fade-right">
+                    <div style="width:90%">
+                        <div class="text-center text-lg-start py-4 pt-lg-0">
+                            <p>Contato</p>
+                            <h2 class="py-2">Deixe seu contato e mensagem</h2>
+                            <p class="sub-title">Para qualquer tipo de projeto online, por favor, não hesite em entrar em contato comigo. A maneira mais rápida é me enviar sua mensagem usando o seguinte e-mail <a class="green no-line" href=" mailto:afonsobezerra199@gmail.com">contact@domain.com</a>.</p>
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
+                        <form action="https://formsubmit.co/afonsobezerra199@gmail.com" method="POST">
+                        
+                            <div class="row" >
+                              
+                                <div class="col-lg-6">
+                                    <div class="form-group py-2">
+                                        <input type="text" name="Nome" class="form-control form-control-input" id="exampleFormControlInput1" placeholder="Nome">
+                                    </div>                                
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group py-2">
+                                        <input type="number" name="Telefone" class="form-control form-control-input" id="exampleFormControlInput2" placeholder="Número">
+                                    </div>                                 
+                                </div>
+                            </div>
+                            <div class="form-group py-1">
+                                <input type="email" name="Email" class="form-control form-control-input" id="exampleFormControlInput3" placeholder="Email">
+                            </div>  
+                            <div class="form-group py-2">
+                                <textarea type="text" name="Mensagem" class="form-control form-control-input" id="exampleFormControlTextarea1" rows="6" placeholder="Mensagem"></textarea>
+                            </div>                            
+                            <input type="hidden" name="_next" value="http://afonso-bezerra.rf.gd/obrigado.html">
+                        <div class="my-3">
+                            <button class="btn form-control-submit-button" type="submit">Enviar</button>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Mensagem</label>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Enviar</button>
-                        </div>
-                    </form>
-                   
-
-                </div> 
-            </div> 
-        </div> 
-    </div> 
-   
+                    </form> 
+                    </div> <!-- end of div -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-down">
+                    <img class="img-fluid d-none d-lg-block" src="./assets/images/contact.jpg" alt="contact">        
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of contact -->
 
 
     <!-- Footer -->
-    <div class="footer bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+    <section class="footer text-light">
+        <div class="container icons-position">
+            <div class="row" data-aos="fade-right">
+                
                     <div class="social-container">
                         <span class="fa-stack">
                             <a href="https://github.com/Afonso-Bezerra">
@@ -280,30 +284,34 @@
                             </a>
                         </span>
                     </div> <!-- end of social-container -->
-                </div> 
+                           
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
+    </section> <!-- end of footer -->
 
 
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a class="no-line">Afonso Bezerra</a></p>
-                </div> 
-            </div> <!-- enf of row -->
+    <!-- Bottom -->
+    <div class="bottom py-2 text-light" >
+        <div class="container d-flex justify-content-between">
+            <div>
+                <p>Copyright © Afonso Bezerra</p>
+            </div>
         </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
+    </div> <!-- end of bottom -->
+
     
-    	
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="assets/images/up-arrow.png" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+
+    
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="./js/bootstrap.min.js"></script><!-- Bootstrap framework -->
+    <script src="./js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
+    <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
+    <script src="./js/script.js"></script>  <!-- Custom scripts -->
 </body>
 </html>
