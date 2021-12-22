@@ -79,7 +79,7 @@ li {
 	position: relative;
 }
 .services{
-	height: 120vh;
+	height: 335vh;
 	position: relative;
 }
 .services,
@@ -399,7 +399,9 @@ li {
 	border-image-source: var(--gradient);
 	box-shadow: 5px 5px 0px 0px #0ee951;
 }
-
+.margin-prj{
+	margin-bottom: 25px;
+}
 
 /*****************/
 /*     Plans     */

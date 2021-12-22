@@ -126,3 +126,12 @@ AOS.init({
     easing: "ease",
     once: true, // whether animation should happen only once - while scrolling down
 });
+
+var typed = new Typed(".auto-input" , {
+    strings:[
+    "Afonso Bezerra", "Web Developer", "UI Designer"
+    ],
+    typeSpeed : 100,
+    backSpeed : 100,
+    loop: true
+});
