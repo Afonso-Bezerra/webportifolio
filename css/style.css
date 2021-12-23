@@ -333,6 +333,7 @@ li {
 	background: transparent;
 	border-image-source: var(--gradient);
 	box-shadow: 5px 5px 0px 0px var(--secondary);
+	transition: all 0.5s;
 }
 
 .btn:hover {
@@ -341,6 +342,17 @@ li {
 	border-radius: 0;
 	padding: 10px 30px;
 	transform: translate(5px, 5px);
+	transition: all 0.5s;
+}
+
+.cv{
+	margin-left:  20px;
+	background: transparent;
+	transition: all 0.5s;
+}
+.cv:hover{
+	
+	transition: all 0.5s;
 }
 
 /* Email - Newsletter Button */
