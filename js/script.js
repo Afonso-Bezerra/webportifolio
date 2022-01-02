@@ -75,32 +75,6 @@ if (dropdownCheck !== null) {
     });
 }
 
-/* CARD SLIDER - SWIPER */
-var cardSlider = new Swiper(".card-slider", {
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-    },
-    loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    slidesPerView: 3,
-    spaceBetween: 70,
-    breakpoints: {
-        // when window is <= 767px
-        767: {
-        slidesPerView: 1,
-        },
-        // when window is <= 991px
-        991: {
-        slidesPerView: 2,
-        spaceBetween: 40,
-        },
-    },
-});
-
 /* BACK TO TOP BUTTON */
 // GET THE BUTTON
 myButton = document.getElementById("myBtn");
@@ -135,3 +109,16 @@ var typed = new Typed(".auto-input" , {
     backSpeed : 100,
     loop: true
 });
+
+document.getElementById('card1').addEventListener('click', () =>{
+    window.open('https://dom.crbconstrutora.com.br/', '_blank');
+})
+
+document.getElementById('card3').addEventListener('click', () =>{
+    window.open('https://www.crbconstrutora.com.br/apartamentos-em-campinas-venda/', '_blank');
+})
+
+document.getElementById('card4').addEventListener('click', () =>{
+    window.open('http://calculadora.afonsobezerra.com/', '_blank');
+})
+

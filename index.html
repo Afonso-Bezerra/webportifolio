@@ -7,8 +7,8 @@
     <meta name="author" content="Afonso Bezerra">
     <title>Afonso Bezerra</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="./css/aos.min.css" rel="stylesheet">
     <link href="./css/swiper.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
@@ -31,7 +31,7 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" >
                 <ul class="navbar-nav ms-auto navbar-nav-scroll">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#header">ínicio</a>
+                        <a class="nav-link active" aria-current="page" href="#header">Ínicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Sobre</a>
@@ -138,59 +138,141 @@
 
     <!-- Services -->
     <section class="services d-flex py-5" id="services">
-        <div class="container text-light">
+        <div class="container services-container text-light">
             <div class="text-center pb-4" >
                 <h2 class="py-2">Projetos</h2>
                 <p class="para-light">Projetos pessoais realizados para estudos e treinamentos.</p>
             </div>
-            <div class="row gy-4 py-2 margin-prj" data-aos="zoom-in">
-                <div class="text-center">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a>
-                                <img src="assets/images/prj1.PNG" alt="SiteProprio">
-                            </a>
-                        </div> 
-                        <p class="sub-title"><strong>Por:</strong> Afonso Bezerra, <strong>Projeto:</strong> web designer para portfólio pessoal profissional.</p>
-                    </div> 
+           
+            <div class="cardprj">
+
+                <div class="card1" id="card1" data-aos="zoom-in">
+                    <section class="titile"></section>
+                    <section class="img">
+                        <div class="title"> <h3>Projeto CRB - DOM</h3></div>
+                        <div class="sobre">
+                            Lading page empreendimento CRB Construtora.
+                        </div>
+                        <div class="icons-prj">
+                            <div class="icon1"></div>
+                            <div class="icon2"></div>
+                            <div class="icon3"></div>
+                        </div>
+                    </section>
+                    
+                    <section class="img-desk">
+                        <div class="title-desk"> <h3><p>Trabalho</p>Projeto CRB</h3> <span></span></div>
+                        <div class="sobre-desk">
+                           Lading page novo empreendimento CRB Construtora.
+                        </div>
+                        <div class="icons-prj-desk">
+                            <div class="icon1"></div>
+                            <div class="icon2"></div>
+                            <div class="icon3"></div>
+                        </div>
+                        <div class="vejamais">
+                         <span class="txt_veja">Veja mais</span>
+                         <div class="linha"></div>
+                        </div>
+                    </section>
+                
                 </div>
-            </div><!-- end of row -->
-            <div class="row gy-4 py-2 margin-prj " data-aos="zoom-in">
-                <div class="text-center">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://dom.crbconstrutora.com.br/" target="_blank">
-                                <img src="assets/images/DOM.png" alt="Page-Dom">
-                            </a>
-                        </div> 
-                        <p class="sub-title"><strong>Por:</strong> Afonso Bezerra, <strong>Projeto:</strong> Lading Page lançamento.</p>
-                    </div> 
+
+                <div class="card2"  id="card2" data-aos="zoom-in">
+                    <section class="titile"></section>
+                    <section class="img">
+                        <div class="title"> <h3>Projeto Portfólio</h3></div>
+                        <div class="sobre">
+                            Portifólio online pessoal.
+                        </div>
+                        <div class="icons-prj">
+                            <div class="icon1"></div>
+                            <div class="icon2"></div>
+                            <div class="icon3"></div>
+                        </div>
+
+                        </section>
+
+                        <section class="img-desk">
+                            <div class="title-desk"> <h3><p>Pessoal</p>Projeto Portfólio</h3> <span></span></div>
+                            <div class="sobre-desk">
+                               Lading page novo empreendimento CRB Construtora.
+                            </div>
+                            <div class="icons-prj-desk">
+                                <div class="icon1"></div>
+                                <div class="icon2"></div>
+                                <div class="icon3"></div>
+                            </div>
+                            <div class="vejamais">
+                                <span class="txt_veja">Veja mais</span>
+                                <div class="linha"></div>
+                               </div>
+                        </section>
                 </div>
-            </div> <!-- end of row -->
-            <div class="row gy-4 py-2 margin-prj " data-aos="zoom-in">
-                <div class="text-center">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://www.crbconstrutora.com.br/apartamentos-em-campinas-venda/" target="_blank">
-                                <img src="assets/images/Crb-Campinas.png" alt="Page-Campinas">
-                            </a>
-                        </div> 
-                        <p class="sub-title"><strong>Por:</strong> Afonso Bezerra, <strong>Projeto:</strong> Site CRB Vendas Campinas.</p>
-                    </div> 
+
+                <div class="card3" id="card3" data-aos="zoom-in">
+                    <section class="titile"></section>
+                    <section class="img">
+                        <div class="title"> <h3>Projeto CRB Vendas</h3></div>
+                        <div class="sobre">
+                            Lading page vendas campinas.
+                        </div>
+                        <div class="icons-prj">
+                            <div class="icon1"></div>
+                            <div class="icon2"></div>
+                            <div class="icon3"></div>
+                        </div>
+                    </section>
+                    <section class="img-desk">
+                        <div class="title-desk"> <h3><p>Trabalho</p>Projeto CRB</h3> <span></span></div>
+                        <div class="sobre-desk">
+                           Página de Vendas Campinas CRB Construtora.
+                        </div>
+                        <div class="icons-prj-desk">
+                            <div class="icon1"></div>
+                            <div class="icon2"></div>
+                            <div class="icon3"></div>
+                        </div>
+                        <div class="vejamais">
+                            <span class="txt_veja">Veja mais</span>
+                            <div class="linha"></div>
+                           </div>
+                    </section>
+
                 </div>
-            </div> <!-- end of row -->
-            <div class="row gy-4 py-2 margin-prj " data-aos="zoom-in">
-                <div class="text-center">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://www.crbconstrutora.com.br/apartamentos-em-sorocaba-venda/" target="_blank">
-                                <img src="assets/images/sorocaba-crb.png" alt="Page-Sorocaba">
-                            </a>
-                        </div> 
-                        <p class="sub-title"><strong>Por:</strong> Afonso Bezerra, <strong>Projeto:</strong> Site CRB Vendas Sorocaba.</p>
-                    </div> 
+
+                <div class="card4"  id="card4" data-aos="zoom-in">
+                    <section class="titile"></section>
+                    <section class="img">
+                        <div class="title"> <h3>Projeto pessoal</h3></div>
+                        <div class="sobre">
+                            Calculadora Dinâmica de Gorjetas<p>Desafio Front-end Mentor.
+                        </div>
+                        <div class="icons-prj">
+                            <div class="icon1"></div>
+                            <div class="icon2"></div>
+                            <div class="icon3"></div>
+                        </div>
+                    </section>
+
+                    <section class="img-desk">
+                        <div class="title-desk"> <h3><p>Pessoal</p>Calculadora</h3> <span></span></div>
+                        <div class="sobre-desk">
+                          Calculadora Dinâmica de Gorjetas<p>Desafio Front-end Mentor.</p>
+                        </div>
+                        <div class="icons-prj-desk">
+                            <div class="icon1"></div>
+                            <div class="icon2"></div>
+                            <div class="icon3"></div>
+                        </div>
+                        <div class="vejamais">
+                            <span class="txt_veja">Veja mais</span>
+                            <div class="linha"></div>
+                        </div>
+                    </section>
                 </div>
-            </div> <!-- end of row -->
+
+            </div>
 
         </div> <!-- end of container -->
     </section> <!-- end of services -->
@@ -222,16 +304,16 @@
                                 <p class="sub-title"> Estou familiarizado e trabalho diariamente com HTML, CSS, JavaScript, Bootstrap e outros frameworks modernos.</p>
                                 <br>
                                 <div class="icons-container">
-                                    <img src="assets/images/details-icon-photoshop.png" alt="alternative">
-                                    <img src="assets/images/details-icon-html.png" alt="alternative">
-                                    <img src="assets/images/details-icon-css.png" alt="alternative">
-                                    <img src="assets/images/sass.png" alt="alternative">
-                                    <img src="assets/images/details-icon-javascript.png" alt="alternative">
-                                    <img src="assets/images/react.png" alt="alternative">
-                                    <img src="assets/images/vue.png" alt="alternative">
-                                    <img src="assets/images/php.png" alt="alternative">
-                                    <img src="assets/images/mysql.png" alt="alternative">
-                                    <img src="assets/images/oracle.png" alt="alternative">
+                                    <img src="assets/images/details-icon-photoshop.png" alt="alternative"  data-toogle="tooltip" title="Photoshop">
+                                    <img src="assets/images/details-icon-html.png" alt="alternative" data-toogle="tooltip" title="HTML">
+                                    <img src="assets/images/details-icon-css.png" alt="alternative" data-toogle="tooltip" title="CSS">
+                                    <img src="assets/images/sass.png" alt="alternative" data-toogle="tooltip" title="SASS">
+                                    <img src="assets/images/details-icon-javascript.png" data-toogle="tooltip" alt="alternative" title="JavaScript">
+                                    <img src="assets/images/react.png" alt="alternative" data-toogle="tooltip" title="React">
+                                    <img src="assets/images/vue.png" alt="alternative" data-toogle="tooltip" title="Vue">
+                                    <img src="assets/images/php.png" alt="alternative" data-toogle="tooltip" title="PHP">
+                                    <img src="assets/images/mysql.png" alt="alternative" data-toogle="tooltip" title="MySql">
+                                    <img src="assets/images/oracle.png" alt="alternative" data-toogle="tooltip" title="Oracle">
                                 </div> 
                             </div> 
                         </div>
@@ -352,7 +434,6 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./js/bootstrap.min.js"></script><!-- Bootstrap framework -->
     <script src="./js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-    <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
     <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
     <script src="./js/script.js"></script>  <!-- Custom scripts -->
 </body>

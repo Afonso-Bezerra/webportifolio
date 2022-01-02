@@ -14,6 +14,15 @@ Table Of Contents:
 - Media Queries
 ******************************************/
 
+@font-face{
+    font-family: 'font-icon';
+    src: url(../assets/fontawesome-free-5.15.4-desktop/otfs/Font\ Awesome\ 5\ Brands-Regular-400.otf);
+}
+
+@font-face{
+    font-family: 'icon-solid';
+    src: url(../assets/fontawesome-free-5.15.4-desktop/otfs/Font\ Awesome\ 5\ Free-Solid-900.otf);
+}
 
 /**************************/
 
@@ -87,11 +96,6 @@ li {
     position: relative;
 }
 
-.services {
-    height: 320vh;
-    position: relative;
-}
-
 .services,
 .contact,
 .testimonial {
@@ -122,7 +126,6 @@ li {
 .plans .far,
 .information .fas,
 .work .fas,
-.services .fas,
 .location .far,
 .location .fas {
     padding: 15px 0;
@@ -428,25 +431,482 @@ li {
 
 /********************/
 
-.services .card {
-    padding: 20px;
-    border-radius: 0;
-    border: 2px solid white;
+
+
+.services {
+    width: 100%;
+    height: 100%;
 }
 
-.services .card:hover {
-    border: 10px solid;
-    transform: scale(1.01);
-    border-image-slice: 1;
-    border-width: 2px;
-    border-image-source: var(--gradient);
-    box-shadow: 5px 5px 0px 0px #0ee951;
-}
+.cardprj{
+     background-color: var(--primary);
+     display: grid;
+     width: 100%;
+     row-gap: 30px;
+ }
 
-.margin-prj {
-    margin-bottom: 25px;
-}
+    .card1{
+        background-image: url('../assets/images/DOM.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 25px;
+        display: grid;
+        grid-template-rows: 1fr auto 1fr;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.583);
+    }
 
+    .img{
+        border: 1px solid rgba(0, 0, 0, 0.337);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.433);
+        background-color: rgba(0, 0, 0, 0.494);
+        width: 80%;
+        height: 300px;
+        display: grid;
+        justify-self: center;
+        border-radius: 15px;
+        grid-template-rows: 1fr 1fr 1fr;
+        backdrop-filter: blur(10px)
+    }
+    .title{
+        letter-spacing:5px;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 30px 0;
+        align-self: flex-start;
+        text-align: center;
+        row-gap: 1;
+    }
+
+    .titile{
+        padding: 20px 0;
+        width: 100%;
+        height: 40px;
+        grid-row: 1;
+    }
+
+    .sobre{
+        grid-row: 2;
+        align-self:center;
+        text-align: center;
+        font-family: "Poppins";
+    }
+
+    .icons-prj{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .icon1::before{
+        font-family: 'font-icon';
+        content: '\f13b';
+        font-size: 50px;
+        background: -webkit-gradient( linear, left top, left bottom, from(#0ee951), to(#00dabf));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 0px 10px;
+    }
+
+    .icon2::before{
+        font-family: 'font-icon';
+        content: '\f38b';
+        font-size: 50px;
+        background: -webkit-gradient( linear, left top, left bottom, from(#0ee951), to(#00dabf));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 0px 10px;
+    }
+
+    .icon3::before{
+        font-family: 'font-icon';
+        content: '\f3b9';
+        font-size: 50px;
+        background: -webkit-gradient( linear, left top, left bottom, from(#0ee951), to(#00dabf));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 0px 10px;
+    }
+
+    .card2{
+        background-image: url('../assets/images/home.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 25px;
+        display: grid;
+        grid-template-rows: 1fr auto 1fr;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.583);
+    }
+
+    .card3{
+        background-image: url('../assets/images/Crb-Campinas.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 25px;
+        display: grid;
+        grid-template-rows: 1fr auto 1fr;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.583);
+    }
+
+    .card4{
+        background-image: url('../assets/images/calculator.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 25px;
+        display: grid;
+        grid-template-rows: 1fr auto 1fr;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.583);
+    }
+
+
+    .img-desk{
+        width: 100%;
+        height: 100px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr auto;
+        align-self: flex-end;
+        border-radius: 25px;
+        transition:all .35s ;   
+        z-index: 2;
+    }
+    
+    .title-desk{
+        grid-row:  1;
+        letter-spacing:5px;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;         
+    }
+
+    .icons-prj-desk{
+        grid-row:  3;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+     
+    }
+
+    .icons-prj-desk{
+        display: none;
+    }
+
+    .vejamais{
+        margin-bottom: 20px;
+        grid-row: 4;
+        justify-self: center;
+        cursor: pointer;
+    }
+
+    .txt_veja{
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.659);
+    }
+
+    .linha {
+        position: relative;
+        display: flex;
+        width: 1px;
+        transition:all .5s;
+        border: 0px solid #0ee951;
+    }
+
+    .vejamais:hover .linha{
+        display: block;
+        width: 82px;
+        transition:all .5s;
+        border: 1px solid #0ee951;
+    }
+
+    .vejamais{
+        display: none;
+    }
+    .sobre-desk{
+        grid-row:  2;
+        font-size: 20px;
+        font-weight: 700;
+        align-self:center;
+        text-align: center;
+        font-family: "Poppins";
+   
+    }
+    
+    .sobre-desk{
+        display: none;
+    }
+
+    .title-desk p{
+        font-size: 15px;
+        padding: 5px 0;
+        color: rgba(255, 255, 255, 0.604);
+    }
+    .sobre p{
+        font-size: 15px;
+        padding: 5px 0;
+        color: rgba(255, 255, 255, 0.604);
+    }
+
+    .sobre-desk p{
+        font-size: 15px;
+        padding: 5px 0;
+        color: rgba(255, 255, 255, 0.604);
+    }
+
+    .card1:hover .sobre-desk{
+        display: block;
+        animation: entrada .5s ease-in-out;
+    }
+
+    .card1:hover .vejamais{
+        display: block;
+        animation: entrada .5s ease-in-out;
+    }
+
+    .card1:hover .icons-prj-desk{
+        display: flex;
+        animation: entrada .5s ease-in-out;
+        
+    }
+   
+    .card1:hover .img-desk{
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.782);
+        backdrop-filter: blur(10px);
+        transition:all .35s;
+    }
+    
+    .card1:hover .title-desk span::before{
+        font-family: 'icon-solid';
+        content: '\f358';
+        font-size: 50px;
+        background: white;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition:all 1s;
+    }
+
+    .card2:hover .sobre-desk{
+        display: block;
+        animation: entrada .5s ease-in-out;
+    }
+
+    .card2:hover .icons-prj-desk{
+        display: flex;
+        animation: entrada .5s ease-in-out;
+    }
+
+    .card2:hover .vejamais{
+        display: block;
+        animation: entrada .5s ease-in-out;
+    }
+
+    .card2:hover .img-desk{
+        position: relative;
+        z-index: 10;
+        height: 400px;
+        border: 1px solid rgba(0, 0, 0, 0.337);
+        background-color: rgba(0, 0, 0, 0.782);
+        backdrop-filter: blur(10px);
+        transition:all .35s;
+    }
+
+    .card2:hover .title-desk span::before{
+        font-family: 'icon-solid';
+        content: '\f358';
+        font-size: 50px;
+        background: white;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition:all 1s;
+    }
+    
+    .card3:hover .sobre-desk{
+        display: block;
+        animation: entrada .5s ease-in-out;
+    }
+
+    .card3:hover .icons-prj-desk{
+        display: flex;
+        animation: entrada .5s ease-in-out;
+    }
+
+    .card3:hover .img-desk{
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.782);
+        backdrop-filter: blur(10px);
+        transition:all .35s;
+    }
+
+    .card3:hover .title-desk span::before{
+        font-family: 'icon-solid';
+        content: '\f358';
+        font-size: 50px;
+        background: white;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition:all 1s;
+    }
+
+    .card3:hover .vejamais{
+        display: block;
+        animation: entrada .5s ease-in-out;
+    }
+    
+    .card4:hover .sobre-desk{
+        display: block;
+        animation: entrada .5s ease-in-out;
+    }
+
+    .card4:hover .icons-prj-desk{
+        display: flex;
+        animation: entrada .5s ease-in-out;
+    }
+
+    .card4:hover .vejamais{
+        display: block;
+        animation: entrada .5s ease-in-out;
+    }
+
+    .card4:hover .img-desk{
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.782);
+        backdrop-filter: blur(10px);
+        transition:all .35s;
+    }
+
+    .card4:hover .title-desk span::before{
+        font-family: 'icon-solid';
+        content: '\f358';
+        font-size: 50px;
+        background: white;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition:all 1s;
+    }
+
+    .title-desk span::before{
+        font-family: 'icon-solid';
+        content: '\f35b';
+        font-size: 50px;
+        background: white;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition:all 1s;
+    }
+
+    .img-desk{
+        display: none;
+    }
+
+    @keyframes entrada{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+
+    @media screen and (min-width:768px){
+        .card1{
+            height: 500px;
+        }
+        .card2{
+            height: 500px;
+        }
+        .card3{
+            height: 500px;
+        }
+        .card4{
+            height: 500px;
+        }
+    }
+
+
+    @media screen and (min-width:1024px){
+        .cardprj{
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr 1fr;
+            column-gap: 45px;
+        }
+        .img{
+            display: none;
+        }
+        .img-desk{
+            display: grid;
+        }
+        .card1{
+            grid-column: 2;
+            grid-row: 1 ;
+            height: 600px;
+            display: grid;
+            grid-template-rows: auto;
+            box-shadow: inset -5px -200px 120px -120px black,  0 0 15px rgba(0, 0, 0, 0.255);
+            -webkit-box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
+            -moz-box-shadow:inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
+        }
+
+        .card2{
+            grid-column: 1;
+            grid-row: 1;
+            height: 600px;
+            grid-template-rows: auto;
+            box-shadow: inset -5px -200px 120px -120px black,  0 0 15px rgba(0, 0, 0, 0.255);
+            -webkit-box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
+            -moz-box-shadow:inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
+        }
+
+        .card3{
+            height: 600px;
+            grid-column: 1;
+            grid-row: 2;
+            grid-template-rows: auto;
+            box-shadow: inset -5px -200px 120px -120px black,  0 0 15px rgba(0, 0, 0, 0.255);
+            -webkit-box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
+            -moz-box-shadow:inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
+        }
+        
+        .card4{
+            grid-column: 2;
+            grid-row: 2 ;
+            height: 600px;
+            grid-template-rows: auto;
+            box-shadow: inset -5px -200px 120px -120px black,  0 0 15px rgba(0, 0, 0, 0.255);
+            -webkit-box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
+            -moz-box-shadow:inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
+        }
+
+        .card1:hover .titile,.card2:hover .titile,.card3:hover .titile,.card4:hover .titile, .img-desk:hover ~ .titile{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index:1;
+            backdrop-filter: blur(4px);
+            border-radius: 25px;
+        }
+    }
 
 /*****************/
 
@@ -721,36 +1181,6 @@ li {
     }
 }
 
-@media screen and (min-height:780px) {
-    .services {
-        height: 395vh;
-    }
-}
-
-@media screen and (min-height:880px) {
-    .services {
-        height: 350vh;
-    }
-}
-
-@media screen and (min-height:1024px) {
-    .services {
-        height: 190vh;
-    }
-}
-
-@media screen and (min-height:1080px) {
-    .services {
-        height: 290vh;
-    }
-}
-
-@media screen and (min-height:1360px) {
-    .services {
-        height: 180vh;
-    }
-}
-
 @media (min-width: 992px) {
     .slider-1 .swiper-container {
         width: 92%;
@@ -844,17 +1274,6 @@ li {
     margin-bottom: 1rem;
 }
 
-@media screen and (min-width:375px) {
-    .services {
-        height: 160vh;
-    }
-}
-
-@media screen and (min-width:414px) {
-    .services {
-        height: 100%;
-    }
-}
 
 
 /* Hover Animation */
