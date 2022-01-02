@@ -828,7 +828,6 @@ li {
         }
     }
 
-
     @media screen and (min-width:768px){
         .card1{
             height: 500px;
@@ -844,12 +843,12 @@ li {
         }
     }
 
-
     @media screen and (min-width:1024px){
         .cardprj{
             grid-template-columns: 50% 50%;
             grid-template-rows: 1fr 1fr;
             column-gap: 20px;
+            row-gap: 20px;
         }
         .img{
             display: none;
