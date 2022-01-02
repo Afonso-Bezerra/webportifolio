@@ -849,7 +849,7 @@ li {
         .cardprj{
             grid-template-columns: 50% 50%;
             grid-template-rows: 1fr 1fr;
-            column-gap: 45px;
+            column-gap: 20px;
         }
         .img{
             display: none;
